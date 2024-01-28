@@ -1,0 +1,24 @@
+.toolbar{
+    margin-bottom: 2em;
+}
+
+.options{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    min-width: 400px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+}
+
+.play, .info, .developer, .version, .exit {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.options button {
+    width: 200px;
+}
