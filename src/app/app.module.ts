@@ -7,12 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider'; 
-import {MatToolbarModule} from '@angular/material/toolbar'; 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { DeveloperComponent } from './developer/developer.component'; 
+import { RouterOutlet, provideRouter } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { routes } from './app.routes';
 
 @NgModule({
   declarations: [
     AppComponent,
     InitialMenuComponent,
+    DeveloperComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,9 +25,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    MatToolbarModule
+    MatToolbarModule,
+    RouterOutlet,
+    RouterModule
   ],
-  providers: [],
+  providers: [provideRouter(routes)],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

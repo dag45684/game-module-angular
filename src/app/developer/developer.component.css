@@ -1,0 +1,54 @@
+p{
+    margin-left: 2em;
+}
+
+.home{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.personalinfo, .estudios, .workexp, .skills {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 1em;
+    width: 30%;
+    min-width: 400px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+}
+
+.dam, .cae, .icti, .mob, .av{
+    font-size: large;
+    font-weight: bold;
+}
+
+.pro, .mid{
+    font-size: x-large;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.name {
+    font-size: xx-large;
+    margin-left: 1em;
+    margin-bottom: -0.5em;
+}
+
+b .name {
+    font-size: xx-large;
+}
+
+.tel {
+    margin-bottom: -1em;
+}
+
+.personalinfo{
+    padding-top: 1em;
+}
