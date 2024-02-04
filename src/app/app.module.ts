@@ -12,12 +12,14 @@ import { DeveloperComponent } from './developer/developer.component';
 import { RouterOutlet, provideRouter } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
+import { GameListComponent } from './game-list/game-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InitialMenuComponent,
     DeveloperComponent,
+    GameListComponent
   ],
   imports: [
     BrowserModule,

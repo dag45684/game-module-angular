@@ -1,0 +1,58 @@
+
+.toolbar{
+    margin-bottom: 2em;
+}
+
+.options{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    min-width: 300px;
+    height: 140px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.play, .info, .developer, .version, .exit {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.options button {
+    width: 160px;
+    height: 60px;
+}
+
+.master{
+    flex-wrap: wrap;
+    gap: 6em;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.master-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home{
+    display: flex;
+    margin-bottom: 3em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
