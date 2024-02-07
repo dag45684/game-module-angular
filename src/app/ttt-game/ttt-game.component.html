@@ -1,0 +1,10 @@
+<div class="master">
+    <div class="board_placement">
+        <h1>{{winner}}</h1>
+        <div class="board">
+            <div class="outer" *ngFor="let idx of [].constructor(9); let i = index" (click)="choice(i);">
+                <div class="img"><h1 *ngIf="used[i]">{{content[i]}}</h1></div>
+            </div>
+        </div>
+    </div>
+</div>

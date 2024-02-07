@@ -13,13 +13,15 @@ import { RouterOutlet, provideRouter } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { GameListComponent } from './game-list/game-list.component';
+import { TttGameComponent } from './ttt-game/ttt-game.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InitialMenuComponent,
     DeveloperComponent,
-    GameListComponent
+    GameListComponent,
+    TttGameComponent
   ],
   imports: [
     BrowserModule,
