@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './spr-game.component.html',
   styleUrls: ['./spr-game.component.css']
 })
-export class GameComponent {
+export class SprGameComponent {
 
   images: string[] = ["assets/images/piedra.png", "assets/images/papel.png", "assets/images/tijeras.png", "assets/images/heart.png"];
   pickIA: number = -1;
