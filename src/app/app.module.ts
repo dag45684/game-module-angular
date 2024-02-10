@@ -15,6 +15,7 @@ import { routes } from './app.routes';
 import { GameListComponent } from './game-list/game-list.component';
 import { TttGameComponent } from './ttt-game/ttt-game.component';
 import { MswGameComponent } from './msw-game/msw-game.component';
+import { CofGameComponent } from './cof-game/cof-game.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MswGameComponent } from './msw-game/msw-game.component';
     DeveloperComponent,
     GameListComponent,
     TttGameComponent,
-    MswGameComponent
+    MswGameComponent,
+    CofGameComponent
   ],
   imports: [
     BrowserModule,
