@@ -5,6 +5,7 @@ import { DeveloperComponent } from './developer/developer.component';
 import { GameListComponent } from './game-list/game-list.component';
 import { TttGameComponent } from './ttt-game/ttt-game.component';
 import { SprGameComponent } from './spr-game/spr-game.component';
+import { MswGameComponent } from './msw-game/msw-game.component';
 
 export const routes = [
     {path: '', component: InitialMenuComponent},
@@ -12,5 +13,6 @@ export const routes = [
     {path: 'developer', component: DeveloperComponent},
     {path: 'gamelist', component: GameListComponent},
     {path: 'sprgame', component: SprGameComponent},
-    {path: 'tttgame', component: TttGameComponent}
+    {path: 'tttgame', component: TttGameComponent},
+    {path: 'mswgame', component: MswGameComponent}
 ]

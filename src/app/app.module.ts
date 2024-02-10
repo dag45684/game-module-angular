@@ -14,6 +14,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { GameListComponent } from './game-list/game-list.component';
 import { TttGameComponent } from './ttt-game/ttt-game.component';
+import { MswGameComponent } from './msw-game/msw-game.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TttGameComponent } from './ttt-game/ttt-game.component';
     InitialMenuComponent,
     DeveloperComponent,
     GameListComponent,
-    TttGameComponent
+    TttGameComponent,
+    MswGameComponent
   ],
   imports: [
     BrowserModule,

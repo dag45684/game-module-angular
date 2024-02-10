@@ -1,0 +1,16 @@
+<div class="master">
+    <div class="game">
+            <h1>{{msg}}</h1>
+        <div class="field">
+            <div class="space" *ngFor="let idx of [].constructor(100); let i = index;" (click)="step(i)">
+                <div class="step">
+                    <h1 *ngIf="(spaces[i] && content[i]!=-1)">{{content[i]}}</h1>
+                    <img *ngIf="(content[i]==-1 && spaces[i])" src="https://www.svgrepo.com/show/79567/bomb.svg">
+                </div>    
+            </div>
+        </div>
+        <button mat-fab color="primary" [disabled]="!gameover" (click)="reset()">
+          <mat-icon>refresh</mat-icon>
+        </button>
+    </div>
+</div>
