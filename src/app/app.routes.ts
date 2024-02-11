@@ -7,6 +7,7 @@ import { TttGameComponent } from './ttt-game/ttt-game.component';
 import { SprGameComponent } from './spr-game/spr-game.component';
 import { MswGameComponent } from './msw-game/msw-game.component';
 import { CofGameComponent } from './cof-game/cof-game.component';
+import { RefGameComponent } from './ref-game/ref-game.component';
 
 export const routes = [
     {path: '', component: InitialMenuComponent},
@@ -16,5 +17,6 @@ export const routes = [
     {path: 'sprgame', component: SprGameComponent},
     {path: 'tttgame', component: TttGameComponent},
     {path: 'mswgame', component: MswGameComponent},
-    {path: 'cofgame', component: CofGameComponent}
+    {path: 'cofgame', component: CofGameComponent},
+    {path: 'refgame', component: RefGameComponent}
 ]

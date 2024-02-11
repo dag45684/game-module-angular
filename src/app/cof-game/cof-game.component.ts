@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./cof-game.component.css']
 })
 
-export class CofGameComponent {
+export class CofGameComponent { 
 
   holes: String[][] = new Array(6).fill([]).map(() => Array(7).fill("#FBFBFB"));
   full: boolean[] = new Array(6).fill(false);
