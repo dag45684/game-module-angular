@@ -1,0 +1,19 @@
+<div class="master">
+    <div class="spacer">
+        <div class="blank"></div>
+        <div class="cash">
+            <h1></h1>
+            <img src="https://cdn.iconscout.com/icon/free/png-512/free-coin-151-119313.png?f=webp&w=256">
+        </div>
+    </div>
+    <div class="box">
+        <div class="gacha" *ngFor="let _ of [].constructor(3); let col = index">
+            <div class="column" *ngFor="let _ of [].constructor(3); let row = index;">
+                <img [src]="imgs[col][row]">
+            </div>
+        </div>
+        <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+          <mat-icon>stop</mat-icon>
+        </button>
+    </div>
+</div>
