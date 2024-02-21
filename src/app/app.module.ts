@@ -17,6 +17,7 @@ import { TttGameComponent } from './ttt-game/ttt-game.component';
 import { MswGameComponent } from './msw-game/msw-game.component';
 import { CofGameComponent } from './cof-game/cof-game.component';
 import { RefGameComponent } from './ref-game/ref-game.component';
+import { GachaGameComponent } from './gacha-game/gacha-game.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { RefGameComponent } from './ref-game/ref-game.component';
     TttGameComponent,
     MswGameComponent,
     CofGameComponent,
-    RefGameComponent
+    RefGameComponent,
+    GachaGameComponent
   ],
   imports: [
     BrowserModule,
