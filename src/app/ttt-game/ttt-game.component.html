@@ -10,8 +10,13 @@
         <h1 *ngIf="end">{{winner}}</h1>
         <div class="board">
             <div class="outer" *ngFor="let idx of [].constructor(9); let i = index" (click)="choice(i);">
-                <div class="img"><h1 *ngIf="used[i]">{{content[i]}}</h1></div>
+                <div class="img">
+                    <h1 *ngIf="used[i]">{{content[i]}}</h1>
+                </div>
             </div>
         </div>
+        <button [disabled]="!end" mat-fab color="primary" (click)="reset()">
+            <mat-icon>refresh</mat-icon>
+        </button>
     </div>
 </div>

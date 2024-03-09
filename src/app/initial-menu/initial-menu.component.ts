@@ -18,7 +18,6 @@ export class InitialMenuComponent {
   exit() {
     if (confirm('Deseas cerrar la web?')) {
       window.close(); //No se puede hacer esto, pero no se que intencion tenia este boton...
-
     }
   }
 

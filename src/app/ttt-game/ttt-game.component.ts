@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class TttGameComponent {
 
+  win: boolean = false
   playerTurn: boolean = true;
   plays: number = 0;
   winner: string = "";
@@ -52,6 +53,16 @@ export class TttGameComponent {
     })
     this.end = ok;
     return ok;
+  }
+
+  reset() {
+    this.playerTurn = true;
+    this.plays = 0;
+    this.winner = "";
+    this.end = false;
+    this.used = Array(9).fill(false);
+    this.content = Array(9).fill("");
+    this.win=true;
   }
 
 }

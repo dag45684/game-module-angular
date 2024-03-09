@@ -9,7 +9,7 @@
 }
 
 .board_placement{
-    height: 70%;
+    height: 80%;
     width: 40%;
     border: 1px solid lightgray;
     background-color: white;
@@ -22,7 +22,7 @@
 
 .board{
     width: 70%;
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: row;
     align-items: center;
