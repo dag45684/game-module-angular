@@ -1,6 +1,13 @@
+<div class="toolbar">
+    <mat-toolbar color="primary">
+        <span>Tres en raya</span>
+        <button mat-flat-button routerLink="/home">Back to home</button>
+        <button mat-flat-button routerLink="/gamelist">Back to games</button>
+    </mat-toolbar>
+</div>
 <div class="master">
     <div class="board_placement">
-        <h1>{{winner}}</h1>
+        <h1 *ngIf="end">{{winner}}</h1>
         <div class="board">
             <div class="outer" *ngFor="let idx of [].constructor(9); let i = index" (click)="choice(i);">
                 <div class="img"><h1 *ngIf="used[i]">{{content[i]}}</h1></div>

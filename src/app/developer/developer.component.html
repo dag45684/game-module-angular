@@ -1,54 +1,171 @@
-<div class="home">
-<button mat-fab color="primary" class="home" routerLink="/home">
-    <mat-icon>home</mat-icon>
-</button>
+<div class="toolbar">
+    <mat-toolbar color="primary">
+        <span>Informacion del desarrollador</span>
+        <button mat-flat-button routerLink="/home">Back to home</button>
+    </mat-toolbar>
 </div>
-<div class="cv">
-    <div class="personalinfo">
-        <p class="name"><b>Carlos</b> Manso Gonzalez</p>
-        <p class="tel">+34 663 14 87 97</p>
-        <p class="location">Oviedo, Asturias.</p>
+<div class="home">
+</div>
+<div class="cvf">
+    <div class="maincont">
+        <div class="cv">
+            <div class="personalinfo">
+                <div class="text">
+                    <p class="name"><b>Carlos</b> Manso Gonzalez</p>
+                    <p class="tel">+34 663 14 87 97</p>
+                    <p class="location">Oviedo, Asturias.</p>
+                </div>
+                <div class="cont">
+                    <img [src]="i_me">
+                </div>
+            </div>
+
+            <div class="estudios">
+                <div class="card">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title-group>
+                                <mat-card-title>CFGS Aplicaciones multiplataforma</mat-card-title>
+                                <mat-card-subtitle>IES Dr. Fleming</mat-card-subtitle>
+                                <img mat-card-sm-image [src]="i_comp">
+                            </mat-card-title-group>
+                        </mat-card-header>
+                        <mat-divider></mat-divider>
+                        <mat-card-content>
+                            Ciclo superior en desarrollo de aplicaciones multiplataforma
+                            donde he adquirido conocimientos en redes, programacion
+                            backend, frontend, acceso a datos, entre otros.
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div class="card">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title-group>
+                                <mat-card-title>English CAE</mat-card-title>
+                                <mat-card-subtitle>ACEIPA</mat-card-subtitle>
+                                <img mat-card-sm-image [src]="i_eng">
+                            </mat-card-title-group>
+                        </mat-card-header>
+                        <mat-divider></mat-divider>
+                        <mat-card-content>
+                            Certificate in advanced english por la universidad de
+                            Cambridge que me certifica como hablante de ingles a un
+                            nivel suficiente como para desenvolverme correctamente en
+                            cualquier tipo de ambiente de habla inglesa.
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div class="card">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title-group>
+                                <mat-card-title>CFGS Imagen</mat-card-title>
+                                <mat-card-subtitle>IES Aramo</mat-card-subtitle>
+                                <img mat-card-sm-image [src]="i_cine">
+                            </mat-card-title-group>
+                        </mat-card-header>
+                        <mat-divider></mat-divider>
+                        <mat-card-content>
+                            Ciclo superior en captacion y tratamiento de imagen donde he
+                            adquirido conociemientos tecnicos y practicos sobre el mundo
+                            audiovisual y me ha preparado para trabajos en entornos
+                            televisivos y de espectaculos.
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+
+            <div class="workexp">
+                <div class="card">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title-group>
+                                <mat-card-title>Mobentis</mat-card-title>
+                                <mat-card-subtitle>Marzo 2023 -
+                                    Actualidad</mat-card-subtitle>
+                                <img mat-card-sm-image [src]="i_mbs">
+                            </mat-card-title-group>
+                        </mat-card-header>
+                        <mat-divider></mat-divider>
+                        <mat-card-content>
+                            Consultora de exito donde he trabajado como programador
+                            junior y mas tarde ascendido a lider de proyecto, trabajando
+                            con tecnologias como PHP, Java, Python o Docker
+                            desarrollando aplicaciones de escritorio y android para ERPs
+                            y liderando un desarrollo de microservicios para
+                            WhatsAppBusiness.
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div class="card">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title-group>
+                                <mat-card-title>Varias empresas A/V</mat-card-title>
+                                <mat-card-subtitle>Mayo 2021 - Noviembre
+                                    2022</mat-card-subtitle>
+                                <img mat-card-sm-image [src]="i_tdp">
+                            </mat-card-title-group>
+                        </mat-card-header>
+                        <mat-divider></mat-divider>
+                        <mat-card-content>
+                            Diferentes contrataciones temporales en empresas de
+                            audiovisuales, trabajando principalmente como operador de
+                            camara en eventos deportivos y realizador de retransmisiones
+                            en directo.
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="sidecont">
+        <div class="skills">
+            <div class="pro">
+                <mat-expansion-panel (opened)="skillOpen = true" (closed)="skillOpen = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title> Experiencia: </mat-panel-title>
+                        <mat-panel-description>
+                            {{!skillOpen ? 'Tecnologias con las que he trabajado' : 'Estas son las tecnologias que
+                            domino'}}
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="iconitos">
+                        <img [src]="skills[1]">
+                        <img [src]="skills[4]">
+                        <img [src]="skills[5]">
+                        <img [src]="skills[6]">
+                        <img [src]="skills[7]">
+                        <img [src]="skills[13]">
+                        <img [src]="skills[14]">
+                        <img [src]="skills[15]">
+                        <img [src]="skills[16]">
+                    </div>
+                </mat-expansion-panel>
+            </div>
+            <div class="pro">
+                <mat-expansion-panel (opened)="midOpen = true" (closed)="midOpen = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title> Skills </mat-panel-title>
+                        <mat-panel-description>
+                            {{!midOpen ? 'Tecnologias adicionales que conozco' : 'Estas son las tecnologias que se
+                            usar'}}
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
 
-    <div class="estudios">
-        <div class="">
-            <p class="dam">CFGS Desarrollo de Aplicaciones Multiplataforma</p>
-            <p>IES Dr Fleming, Asturias. 2022-2024</p>
-        </div>
-        <div class="">
-            <p class="cae">Certificate of Advanced English</p>
-            <p>CEIPA, Asturias. 2021</p>
-        </div>
-        <div class="">
-            <p class="icti">CFGS Ilumacion Captacion y Tratamiento de Imagen</p>
-            <p>IES Aramo, Asturias. 2018-2020</p>
-        </div>
-    </div>
+                    <div class="iconitos">
+                        <img [src]="skills[2]">
+                        <img [src]="skills[3]">
+                        <img [src]="skills[8]">
+                        <img [src]="skills[9]">
+                        <img [src]="skills[10]">
+                        <img [src]="skills[11]">
+                        <img [src]="skills[12]">
+                    </div>
 
-    <div class="workexp">
-        <div class="">
-            <p class="mob">Mobentis Multisoft</p>
-            <p>Desarrollador Junior. Marzo 2023 - Actualidad</p>
+                </mat-expansion-panel>
+            </div>
         </div>
-        <div class="">
-            <p class="av">Varias empresas</p>
-            <p>Operador de camara, realizador, fotografo</p>
-        </div>
-    </div>
-
-    <div class="skills">
-        <div class="">
-            <p class="pro">Experiencia profesional:</p>
-            <p><b>Lenguajes:</b> Python, Java, PHP, SQL</p>
-            <p><b>Frameworks y herramientas:</b> Linux, FastAPI, Docker, Git</p>
-        </div>
-        <div class="">
-            <p class="mid">Conocimientos previos:</p>
-            <p><b>Lenguajes:</b> C#, Rust, C, C++, TypeScript, Shell, BASH,
-                Dart</p>
-            <p><b>Frameworks y herramientas:</b> Selenium, LaTeX, Markdown,
-                PL/SQL, Swing, Flutter, Angular</p>
-        </div>
-
     </div>
 </div>

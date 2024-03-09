@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-spr-game',
@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SprGameComponent {
 
-  images: string[] = ["assets/images/piedra.png", "assets/images/papel.png", "assets/images/tijeras.png", "assets/images/heart.png"];
-  pickIA: number = -1;
-  pick: number = -1;
+  images: string[] = ["assets/images/piedra.png", "assets/images/papel.png", "assets/images/tijeras.png", "assets/images/heart.png", "assets/images/white.jpg"];
+  pickIA: number = 4;
+  pick: number = 4;
   msg: String = "IA Vs. Player!";
   scoreIA: number = 5;
   scoreP1: number = 5;

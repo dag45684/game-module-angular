@@ -1,4 +1,13 @@
-<div class="master">
+<div class="toolbar">
+    <mat-toolbar color="primary">
+        <span>Tragaperras</span>
+        <button mat-flat-button routerLink="/home">Back to home</button>
+        <button mat-flat-button routerLink="/gamelist">Back to games</button>
+    </mat-toolbar>
+</div>
+<p *ngIf="manteinance">Development in progress.</p>
+
+<div *ngIf="!manteinance" class="master">
     <div class="spacer">
         <div class="blank"></div>
         <div class="cash">

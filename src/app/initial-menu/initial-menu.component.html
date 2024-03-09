@@ -13,7 +13,7 @@
     </div>
     <mat-divider></mat-divider>
     <div class="info">
-        <button mat-fab extended color="primary">
+        <button mat-fab extended color="primary" routerLink="/info">
             <mat-icon>info</mat-icon>
             Informacion
         </button>
@@ -27,14 +27,14 @@
     </div>
     <mat-divider></mat-divider>
     <div class="version">
-        <button mat-fab extended color="primary">
+        <button mat-fab extended color="primary" (click)="openSnackBar('v0.1.1 - Beta', 'Hide')">
             <mat-icon>devices</mat-icon>
             Version
         </button>
     </div>
     <mat-divider></mat-divider>
     <div class="exit">
-        <button mat-fab extended color="warn">
+        <button mat-fab extended color="warn" (click)="exit()">
             <mat-icon>close</mat-icon>
             Salir
         </button>

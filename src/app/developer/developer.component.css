@@ -1,8 +1,8 @@
-p{
+p {
     margin-left: 2em;
 }
 
-.home{
+.home {
     margin-top: 1em;
     display: flex;
     flex-direction: row;
@@ -11,28 +11,80 @@ p{
     margin-right: auto;
 }
 
-.personalinfo, .estudios, .workexp, .skills {
+.personalinfo,
+.estudios,
+.workexp,
+.skills {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
     padding-top: 2em;
     padding-bottom: 2em;
     padding-right: 1em;
-    width: 30%;
+    width: 60%;
     min-width: 400px;
     border: 1px solid lightgray;
     border-radius: 50px;
 }
 
-.dam, .cae, .icti, .mob, .av{
+.card {
+    width: 33%;
+    max-height: 500px;
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+.pro {
+    min-width: 45%;
+    max-width: 45%;
+}
+
+.iconitos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.iconitos>* {
+    flex: 1, 0, 16%;
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.personalinfo,
+.estudios,
+.workexp,
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.dam,
+.cae,
+.icti,
+.mob,
+.av {
     font-size: large;
     font-weight: bold;
 }
 
-.pro, .mid{
+.pro,
+.mid {
     font-size: x-large;
     font-weight: normal;
-    text-decoration: underline;
 }
 
 .name {
@@ -49,6 +101,35 @@ b .name {
     margin-bottom: -1em;
 }
 
-.personalinfo{
+.personalinfo {
     padding-top: 1em;
+}
+
+mat-divider {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+mat-card {
+    transition: 75ms;
+}
+
+mat-card:hover {
+    transition: 150ms;
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+    transform: rotate(1deg) scale(1.05);
+    background-color: gainsboro;
+}
+
+.iconitos>*:hover {
+    transition: 150ms;
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 4px 4px rgb(0 0 0 / 0.06));
+    transform: rotate(1deg) scale(1.25);
+}
+
+mat-toolbar>* {
+    margin-left: 1em;
+    margin-right: 1em;
 }

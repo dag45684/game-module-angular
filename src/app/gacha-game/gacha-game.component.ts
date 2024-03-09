@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GachaGameComponent implements OnInit{
 
+  manteinance: boolean = true
+
   gacha: string[][] = new Array(6).fill([]).map(() => Array(7).fill(""));
   cherries: string[] = [""];
   running: boolean[] = [false, false, false];
+  imgs: string[] = ["", "", "", "", ""]
   iter: number = 4;
   coins: number = 10;
   allow: boolean = true;

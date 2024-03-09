@@ -1,0 +1,35 @@
+<div class="toolbar">
+    <mat-toolbar color="primary">
+        <span>Info</span>
+        <button mat-flat-button routerLink="/home">Back to home</button>
+    </mat-toolbar>
+</div>
+<div class="master">
+    <div class="cont">
+        <mat-tab-group>
+            <mat-tab label="Tecnologias utilizadas">
+                <div class="dmn">
+                    <h1>Angular</h1>
+                    <h1>Typescript</h1>
+                    <h1>Git</h1>
+                </div>
+            </mat-tab>
+            <mat-tab label="Desarrollador">
+                <div class="dmn">
+                    <a routerLink="/developer">
+                        <h1>Carlos Manso</h1>
+                    </a>
+                    <h4>Colaboradores:</h4>
+                    Abel Alonso
+                    <br>
+                    Ignacio Fernandez
+                </div>
+            </mat-tab>
+            <mat-tab label="Fotito mia">
+                <div class="dmn">
+                    <img [src]="'/assets/images/reimu.jpeg'">
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>

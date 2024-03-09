@@ -3,10 +3,15 @@
     margin-bottom: 2em;
 }
 
+mat-toolbar > * {
+    margin-left: 1em;
+    margin-right:1em;
+}
+
 .options{
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 400px;
     min-width: 300px;
     height: 140px;
     border: 1px solid lightgray;
@@ -27,8 +32,13 @@
 }
 
 .options button {
-    width: 160px;
-    height: 60px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .master{

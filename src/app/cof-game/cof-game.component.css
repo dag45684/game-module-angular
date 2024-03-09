@@ -5,17 +5,19 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: gainsboro;
 }
 
 .board{
-    width: 80%;
+    width: 60%;
     height: 65%;
-    background-color: pink;
+    border: 1px solid lightgray;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 21px;
 }
 
 .content{
@@ -47,4 +49,10 @@
 
 button{
     margin-bottom: 2em;
+}
+
+mat-toolbar > * {
+    margin-bottom: 0px;
+    margin-left: 1em;
+    margin-right:1em;
 }
